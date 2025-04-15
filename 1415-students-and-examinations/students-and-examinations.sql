@@ -6,7 +6,7 @@ SELECT
     COUNT(e.subject_name) AS attended_exams
 FROM
     Students s
-CROSS JOIN
+     JOIN
     Subjects sub
 LEFT JOIN
     Examinations e

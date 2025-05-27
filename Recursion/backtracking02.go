@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//print the sequences whose sum is K
 func printSum(ind int, ds []int, s int, sum int, arr []int, n int) {
 	if ind == n {
 		if s == sum {

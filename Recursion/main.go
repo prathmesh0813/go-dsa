@@ -15,10 +15,14 @@ func main() {
 
 	//printSum(0,ds,0,sum,arr,n)
 
-	//Backtracking03
-	arr := []int{1, 2, 1}
-	n := len(arr)
-	sum := 2
-	result := printCount(0, 0, sum, arr, n)
-	fmt.Print(result)
+	// //Backtracking03
+	// arr := []int{1, 2, 1}
+	// n := len(arr)
+	// sum := 2
+	// result := printCount(0, 0, sum, arr, n)
+	// fmt.Print(result)
+
+	//Backtracking04
+	arr := [] int {3,1,2}
+	fmt.Println(subsetSum(arr))
 }

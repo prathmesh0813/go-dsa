@@ -23,6 +23,11 @@ func main() {
 	// fmt.Print(result)
 
 	//Backtracking04
-	arr := [] int {3,1,2}
-	fmt.Println(subsetSum(arr))
+	// arr := [] int {3,1,2}
+	// fmt.Println(subsetSum(arr))
+
+	//Backtracking05
+	nums := []int{1, 2, 3}
+    result := permute(nums)
+    fmt.Println(result)
 }

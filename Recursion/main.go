@@ -27,7 +27,21 @@ func main() {
 	// fmt.Println(subsetSum(arr))
 
 	//Backtracking05
-	nums := []int{1, 2, 3}
-    result := permute(nums)
-    fmt.Println(result)
+	// nums := []int{1, 2, 3}
+    // result := permute(nums)
+    // fmt.Println(result)
+
+	//Backtracking06
+	G := [][]int{
+		{1, 2},  // Node 0 is connected to 1 and 2
+		{0, 2},  // Node 1 is connected to 0 and 2
+		{0, 1},  // Node 2 is connected to 0 and 1
+	}
+	m := 3 // Number of colors
+
+	if graphColoring(G, m) {
+		fmt.Println("Graph can be colored with", m, "colors.")
+	} else {
+		fmt.Println("Graph cannot be colored with", m, "colors.")
+	}
 }

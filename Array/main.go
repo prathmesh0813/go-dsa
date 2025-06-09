@@ -15,11 +15,18 @@ func main() {
 	// fmt.Println(result)
 
 	//Problem-no-04-Given an unsorted slice of n positive integers like {3,2,1,4,5,4,…,n} where each number is smaller than n and there is at most one duplicate, return the duplicate value like 4.
-	result := FindDuplicateValuesInArray([]int{3, 4, 5, 1, 2, 2})
-	fmt.Println(result)
+	// result := FindDuplicateValuesInArray([]int{3, 4, 5, 1, 2, 2})
+	// fmt.Println(result)
 
 	// //Problem-no-05-threesum problem
 	// result := ThreeSum([]int{-1, 0, 1, 2, -1, -4})
 	// fmt.Println(result)
+
+	//Problem01 find second largest and second smallest
+	arr := []int{2, 4, 5, 7, 2}
+	n := len(arr)
+
+	fmt.Println("second largest is ", secondLagrest(arr, n))
+	fmt.Print("second smallest is ", seconSmallest(arr, n))
 
 }

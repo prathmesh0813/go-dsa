@@ -23,10 +23,14 @@ func main() {
 	// fmt.Println(result)
 
 	//Problem01 find second largest and second smallest
-	arr := []int{2, 4, 5, 7, 2}
-	n := len(arr)
+	// arr := []int{2, 4, 5, 7, 2}
+	// n := len(arr)
 
-	fmt.Println("second largest is ", secondLagrest(arr, n))
-	fmt.Print("second smallest is ", seconSmallest(arr, n))
+	// fmt.Println("second largest is ", secondLagrest(arr, n))
+	// fmt.Print("second smallest is ", seconSmallest(arr, n))
+
+	arr := []int{1, 2, 3, 4, 5}
+	n := len(arr)
+	fmt.Println("Rotated array:", rotateArray(arr, n))
 
 }

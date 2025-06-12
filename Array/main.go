@@ -29,8 +29,14 @@ func main() {
 	// fmt.Println("second largest is ", secondLagrest(arr, n))
 	// fmt.Print("second smallest is ", seconSmallest(arr, n))
 
+	//Problem02 Left rotate an Array by one
+	// arr := []int{1, 2, 3, 4, 5}
+	// n := len(arr)
+	// fmt.Println("Rotated array:", rotateArray(arr, n))
+
+	//Problem03 Right rotate an Array by one
 	arr := []int{1, 2, 3, 4, 5}
 	n := len(arr)
-	fmt.Println("Rotated array:", rotateArray(arr, n))
+	fmt.Println("Rotated array:", rotateArrayToRight(arr, n))
 
 }

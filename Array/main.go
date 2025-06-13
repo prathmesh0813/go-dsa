@@ -35,8 +35,15 @@ func main() {
 	// fmt.Println("Rotated array:", rotateArray(arr, n))
 
 	//Problem03 Right rotate an Array by one
-	arr := []int{1, 2, 3, 4, 5}
-	n := len(arr)
-	fmt.Println("Rotated array:", rotateArrayToRight(arr, n))
+	// arr := []int{1, 2, 3, 4, 5}
+	// n := len(arr)
+	// fmt.Println("Rotated array:", rotateArrayToRight(arr, n))
+
+	//Problem04 Union of two sorted arrays
+	a := []int{1, 2, 2, 3, 4}
+	b := []int{2, 3, 5, 6, 10}
+
+	result := UnionOfArray(a, b)
+	fmt.Println("Union of arrays:", result)
 
 }

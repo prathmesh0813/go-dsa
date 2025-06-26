@@ -40,10 +40,20 @@ func main() {
 	// fmt.Println("Rotated array:", rotateArrayToRight(arr, n))
 
 	//Problem04 Union of two sorted arrays
-	a := []int{1, 2, 2, 3, 4}
-	b := []int{2, 3, 5, 6, 10}
+	// a := []int{1, 2, 2, 3, 4}
+	// b := []int{2, 3, 5, 6, 10}
 
-	result := UnionOfArray(a, b)
-	fmt.Println("Union of arrays:", result)
+	// result := UnionOfArray(a, b)
+	// fmt.Println("Union of arrays:", result)
+
+	//Problem05 Alternate number
+	//Problem Statement
+	// There is an array 'A' of size 'N' with positive and negative elements. Without altering the relative order of positive and negative
+	//  numbers, you must return an array of alternative positive and negative values.
+	// Note:Start the array with a positive number. If any of the positive and negative numbers are left, add them at the end without
+	// altering the order.
+	a := []int{3, 1, -2, -5, 2, -4, -9, 12, 13}
+	res := alternateNumbers(a)
+	fmt.Println(res)
 
 }

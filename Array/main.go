@@ -52,8 +52,16 @@ func main() {
 	//  numbers, you must return an array of alternative positive and negative values.
 	// Note:Start the array with a positive number. If any of the positive and negative numbers are left, add them at the end without
 	// altering the order.
-	a := []int{3, 1, -2, -5, 2, -4, -9, 12, 13}
-	res := alternateNumbers(a)
-	fmt.Println(res)
+	// a := []int{3, 1, -2, -5, 2, -4, -9, 12, 13}
+	// res := alternateNumbers(a)
+	// fmt.Println(res)
 
+	//Problem06 Superior Element or Leader element
+	//There is an integer array 'A' of size 'N'. An element is called a Superior Element if it is greater than all the elements present
+	//to its right.You must return a sorted array of all Superior Elements in the array "A.
+	// Note:The last element of the array is always a Superior Element
+
+	a := []int{1, 2, 3, 23, 4, 22, 21}
+	result := superiorElements(a)
+	fmt.Println(result)
 }

@@ -28,13 +28,22 @@ func main() {
 	// Floor() returns the greatest number in the array that is less than or equal to the target.
 	// If no such number exists, it returns -1.
 	// We assume the array is sorted in non-decreasing order.
-	nums := []int{1, 2, 3, 3, 5, 8, 8, 10, 10, 11}
-	target := 7
-	n := len(nums)
-	floorVal := Floor(nums, n, target)
-	if floorVal != -1 {
-		fmt.Println("Floor of", target, "is", floorVal)
-	} else {
-		fmt.Println("No floor found for", target)
-	}
+	// nums := []int{1, 2, 3, 3, 5, 8, 8, 10, 10, 11}
+	// target := 7
+	// n := len(nums)
+	// floorVal := Floor(nums, n, target)
+	// if floorVal != -1 {
+	// 	fmt.Println("Floor of", target, "is", floorVal)
+	// } else {
+	// 	fmt.Println("No floor found for", target)
+	// }
+
+	//Problem04 Find the nth root of integer using binary search
+	// 3th root of integer 27 is 3
+	fmt.Println(NthRoot(3, 27))  // 3
+	fmt.Println(NthRoot(6, 64))  // 2
+	fmt.Println(NthRoot(3, 20))  // -1
+	fmt.Println(NthRoot(4, 1))   // 1
+	fmt.Println(NthRoot(4, 0))   // 0
+	fmt.Println(NthRoot(5, 243)) // 3
 }

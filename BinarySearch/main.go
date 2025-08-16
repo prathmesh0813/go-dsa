@@ -40,10 +40,17 @@ func main() {
 
 	//Problem04 Find the nth root of integer using binary search
 	// 3th root of integer 27 is 3
-	fmt.Println(NthRoot(3, 27))  // 3
-	fmt.Println(NthRoot(6, 64))  // 2
-	fmt.Println(NthRoot(3, 20))  // -1
-	fmt.Println(NthRoot(4, 1))   // 1
-	fmt.Println(NthRoot(4, 0))   // 0
-	fmt.Println(NthRoot(5, 243)) // 3
+	// fmt.Println(NthRoot(3, 27))  // 3
+	// fmt.Println(NthRoot(6, 64))  // 2
+	// fmt.Println(NthRoot(3, 20))  // -1
+	// fmt.Println(NthRoot(4, 1))   // 1
+	// fmt.Println(NthRoot(4, 0))   // 0
+	// fmt.Println(NthRoot(5, 243)) // 3
+
+	//Problem02 kth element in two sorted arrays using binary search
+	nums1 := []int{2, 3, 6, 7, 9}
+	nums2 := []int{1, 4, 8, 10}
+	k := 5
+
+	fmt.Println("Kth element is:", findKthElement(nums1, nums2, k))
 }

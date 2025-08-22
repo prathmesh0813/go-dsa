@@ -47,10 +47,17 @@ func main() {
 	// fmt.Println(NthRoot(4, 0))   // 0
 	// fmt.Println(NthRoot(5, 243)) // 3
 
-	//Problem02 kth element in two sorted arrays using binary search
-	nums1 := []int{2, 3, 6, 7, 9}
-	nums2 := []int{1, 4, 8, 10}
-	k := 5
+	// //Problem02 kth element in two sorted arrays using binary search
+	// nums1 := []int{2, 3, 6, 7, 9}
+	// nums2 := []int{1, 4, 8, 10}
+	// k := 5
 
-	fmt.Println("Kth element is:", findKthElement(nums1, nums2, k))
+	// fmt.Println("Kth element is:", findKthElement(nums1, nums2, k))
+	//Problem06 Median of row wise sorted matrix
+	matrix := [][]int{
+		{1, 3, 5},
+		{2, 6, 9},
+		{3, 6, 9},
+	}
+	fmt.Println(matrixMedian(matrix))
 }

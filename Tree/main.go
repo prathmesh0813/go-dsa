@@ -38,8 +38,25 @@ func main() {
 	// fmt.Println("Inorder Traversal (Iterative):")
 	// InorderIterative(root)
 
-	//Problem03 Postorder Traversal Iterative using one stack
+	//Problem03 Postorder Traversal Iterative using two stack
 	// Build the tree
+	//       1
+	//      / \
+	//     2   3
+	//    / \
+	//   4   5
+	// root := &Node{Value: 1}
+	// root.Left = &Node{Value: 2}
+	// root.Right = &Node{Value: 3}
+	// root.Left.Left = &Node{Value: 4}
+	// root.Left.Right = &Node{Value: 5}
+
+	// fmt.Println("Postorder Traversal (2 Stacks):")
+	// fmt.Println(PostorderTwoStacks(root))
+
+	//Problem04 Postorder Traversal Iterative using one stack
+
+	// Build tree
 	//       1
 	//      / \
 	//     2   3
@@ -51,6 +68,6 @@ func main() {
 	root.Left.Left = &Node{Value: 4}
 	root.Left.Right = &Node{Value: 5}
 
-	fmt.Println("Postorder Traversal (2 Stacks):")
-	fmt.Println(PostorderTwoStacks(root))
+	fmt.Println("Postorder Traversal (1 Stack):")
+	fmt.Println(PostorderOneStack(root))
 }

@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// //Problem01 preorder traversal Iterative using stack
@@ -94,16 +96,25 @@ func main() {
 	//      2   3
 	//     / \
 	//    4   5
+	// root := &Node{Value: 1}
+	// root.Left = &Node{Value: 2}
+	// root.Right = &Node{Value: 3}
+	// root.Left.Left = &Node{Value: 4}
+	// root.Left.Right = &Node{Value: 5}
+	// println(IsBalanced(root))
+
+	// // Unbalanced tree
+	// root.Left.Left.Left = &Node{Value: 6}
+	// root.Left.Left.Left.Left = &Node{Value: 7}
+
+	// println(IsBalanced(root))
+
+	//Problem07 Diameter of binary tree
 	root := &Node{Value: 1}
 	root.Left = &Node{Value: 2}
 	root.Right = &Node{Value: 3}
 	root.Left.Left = &Node{Value: 4}
 	root.Left.Right = &Node{Value: 5}
-	println(IsBalanced(root))
 
-	// Unbalanced tree
-	root.Left.Left.Left = &Node{Value: 6}
-	root.Left.Left.Left.Left = &Node{Value: 7}
-
-	println(IsBalanced(root))
+	fmt.Println("Diameter:", diameterOfBinaryTree(root))
 }

@@ -110,11 +110,31 @@ func main() {
 	// println(IsBalanced(root))
 
 	//Problem07 Diameter of binary tree
-	root := &Node{Value: 1}
-	root.Left = &Node{Value: 2}
-	root.Right = &Node{Value: 3}
-	root.Left.Left = &Node{Value: 4}
-	root.Left.Right = &Node{Value: 5}
+	// root := &Node{Value: 1}
+	// root.Left = &Node{Value: 2}
+	// root.Right = &Node{Value: 3}
+	// root.Left.Left = &Node{Value: 4}
+	// root.Left.Right = &Node{Value: 5}
 
-	fmt.Println("Diameter:", diameterOfBinaryTree(root))
+	// fmt.Println("Diameter:", diameterOfBinaryTree(root))
+
+	//Problem08 MAximum path sum of given binary tree
+	/*
+	   Example Tree:
+	         -10
+	         /  \
+	        9   20
+	           /  \
+	          15   7
+
+	   Max path sum = 15 + 20 + 7 = 42
+	*/
+
+	root := &Node{Value: -10}
+	root.Left = &Node{Value: 9}
+	root.Right = &Node{Value: 20}
+	root.Right.Left = &Node{Value: 15}
+	root.Right.Right = &Node{Value: 7}
+
+	fmt.Println("Maximum Path Sum:", maxPathSum(root))
 }

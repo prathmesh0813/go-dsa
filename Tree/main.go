@@ -130,11 +130,34 @@ func main() {
 	   Max path sum = 15 + 20 + 7 = 42
 	*/
 
-	root := &Node{Value: -10}
-	root.Left = &Node{Value: 9}
-	root.Right = &Node{Value: 20}
-	root.Right.Left = &Node{Value: 15}
-	root.Right.Right = &Node{Value: 7}
+	// root := &Node{Value: -10}
+	// root.Left = &Node{Value: 9}
+	// root.Right = &Node{Value: 20}
+	// root.Right.Left = &Node{Value: 15}
+	// root.Right.Right = &Node{Value: 7}
 
-	fmt.Println("Maximum Path Sum:", maxPathSum(root))
+	// fmt.Println("Maximum Path Sum:", maxPathSum(root))
+
+	//Problem09 Boundary traversal of a binary tree
+	/*
+	        1
+	      /   \
+	     2     3
+	    / \   / \
+	   4   5 6   7
+	      / \
+	     8   9
+	*/
+	root := &Node{Value: 1}
+	root.Left = &Node{Value: 2}
+	root.Right = &Node{Value: 3}
+	root.Left.Left = &Node{Value: 4}
+	root.Left.Right = &Node{Value: 5}
+	root.Right.Left = &Node{Value: 6}
+	root.Right.Right = &Node{Value: 7}
+	root.Left.Right.Left = &Node{Value: 8}
+	root.Left.Right.Right = &Node{Value: 9}
+
+	result := printBoundary(root)
+	fmt.Println("Boundary Traversal:", result)
 }

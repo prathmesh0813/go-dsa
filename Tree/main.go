@@ -148,16 +148,30 @@ func main() {
 	      / \
 	     8   9
 	*/
-	root := &Node{Value: 1}
-	root.Left = &Node{Value: 2}
-	root.Right = &Node{Value: 3}
-	root.Left.Left = &Node{Value: 4}
-	root.Left.Right = &Node{Value: 5}
-	root.Right.Left = &Node{Value: 6}
-	root.Right.Right = &Node{Value: 7}
-	root.Left.Right.Left = &Node{Value: 8}
-	root.Left.Right.Right = &Node{Value: 9}
+	// root := &Node{Value: 1}
+	// root.Left = &Node{Value: 2}
+	// root.Right = &Node{Value: 3}
+	// root.Left.Left = &Node{Value: 4}
+	// root.Left.Right = &Node{Value: 5}
+	// root.Right.Left = &Node{Value: 6}
+	// root.Right.Right = &Node{Value: 7}
+	// root.Left.Right.Left = &Node{Value: 8}
+	// root.Left.Right.Right = &Node{Value: 9}
 
-	result := printBoundary(root)
-	fmt.Println("Boundary Traversal:", result)
+	// result := printBoundary(root)
+	// fmt.Println("Boundary Traversal:", result)
+
+	//Problem10 Top view of the binary tree
+	// Example Tree:
+	//        1
+	//      /   \
+	//     2     3
+	//    / \   / \
+	//   4   5 6   7
+	root := &Node{1,
+		&Node{2, &Node{4, nil, nil}, &Node{5, nil, nil}},
+		&Node{3, &Node{6, nil, nil}, &Node{7, nil, nil}},
+	}
+
+	fmt.Println(topView(root))
 }

@@ -168,10 +168,30 @@ func main() {
 	//     2     3
 	//    / \   / \
 	//   4   5 6   7
-	root := &Node{1,
-		&Node{2, &Node{4, nil, nil}, &Node{5, nil, nil}},
-		&Node{3, &Node{6, nil, nil}, &Node{7, nil, nil}},
-	}
+	// root := &Node{1,
+	// 	&Node{2, &Node{4, nil, nil}, &Node{5, nil, nil}},
+	// 	&Node{3, &Node{6, nil, nil}, &Node{7, nil, nil}},
+	// }
 
-	fmt.Println(topView(root))
+	// fmt.Println(topView(root))
+
+	//Problem11 Bottom View of the Binary Tree
+	// Example:
+	//      20
+	//     /  \
+	//    8   22
+	//   / \    \
+	//  5  3    25
+	//    / \
+	//   10 14
+	root := &Node{20, nil, nil}
+	root.Left = &Node{8, nil, nil}
+	root.Right = &Node{22, nil, nil}
+	root.Left.Left = &Node{5, nil, nil}
+	root.Left.Right = &Node{3, nil, nil}
+	root.Right.Right = &Node{25, nil, nil}
+	root.Left.Right.Left = &Node{10, nil, nil}
+	root.Left.Right.Right = &Node{14, nil, nil}
+
+	fmt.Println(bottomView(root))
 }

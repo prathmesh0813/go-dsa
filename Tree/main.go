@@ -184,14 +184,37 @@ func main() {
 	//  5  3    25
 	//    / \
 	//   10 14
-	root := &Node{20, nil, nil}
-	root.Left = &Node{8, nil, nil}
-	root.Right = &Node{22, nil, nil}
-	root.Left.Left = &Node{5, nil, nil}
-	root.Left.Right = &Node{3, nil, nil}
-	root.Right.Right = &Node{25, nil, nil}
-	root.Left.Right.Left = &Node{10, nil, nil}
-	root.Left.Right.Right = &Node{14, nil, nil}
+	// root := &Node{20, nil, nil}
+	// root.Left = &Node{8, nil, nil}
+	// root.Right = &Node{22, nil, nil}
+	// root.Left.Left = &Node{5, nil, nil}
+	// root.Left.Right = &Node{3, nil, nil}
+	// root.Right.Right = &Node{25, nil, nil}
+	// root.Left.Right.Left = &Node{10, nil, nil}
+	// root.Left.Right.Right = &Node{14, nil, nil}
 
-	fmt.Println(bottomView(root))
+	// fmt.Println(bottomView(root))
+
+	//Problem12 Root to Node path of Binary Tree
+
+	//     1
+	//    / \
+	//   2   3
+	//  / \   \
+	// 4   5   6
+	root := &Node{Value: 1}
+	root.Left = &Node{Value: 2}
+	root.Right = &Node{Value: 3}
+	root.Left.Left = &Node{Value: 4}
+	root.Left.Right = &Node{Value: 5}
+	root.Right.Right = &Node{Value: 6}
+
+	target := 5
+	path := []int{}
+
+	if findPath(root, target, &path) {
+		fmt.Println("Path from root to node:", path)
+	} else {
+		fmt.Println("Target not found")
+	}
 }

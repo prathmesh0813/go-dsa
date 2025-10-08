@@ -195,26 +195,53 @@ func main() {
 
 	// fmt.Println(bottomView(root))
 
-	//Problem12 Root to Node path of Binary Tree
+	// //Problem12 Root to Node path of Binary Tree
 
-	//     1
-	//    / \
-	//   2   3
-	//  / \   \
-	// 4   5   6
-	root := &Node{Value: 1}
-	root.Left = &Node{Value: 2}
-	root.Right = &Node{Value: 3}
-	root.Left.Left = &Node{Value: 4}
+	// //     1
+	// //    / \
+	// //   2   3
+	// //  / \   \
+	// // 4   5   6
+	// root := &Node{Value: 1}
+	// root.Left = &Node{Value: 2}
+	// root.Right = &Node{Value: 3}
+	// root.Left.Left = &Node{Value: 4}
+	// root.Left.Right = &Node{Value: 5}
+	// root.Right.Right = &Node{Value: 6}
+
+	// target := 5
+	// path := []int{}
+
+	// if findPath(root, target, &path) {
+	// 	fmt.Println("Path from root to node:", path)
+	// } else {
+	// 	fmt.Println("Target not found")
+	// }
+
+	//Problem12 Children Sum Property of given binary tree
+	// Example:
+	//         50
+	//        /  \
+	//      7     2
+	//     / \   / \
+	//    3  5  1  30
+
+	root := &Node{Value: 50}
+	root.Left = &Node{Value: 7}
+	root.Right = &Node{Value: 2}
+	root.Left.Left = &Node{Value: 3}
 	root.Left.Right = &Node{Value: 5}
-	root.Right.Right = &Node{Value: 6}
+	root.Right.Left = &Node{Value: 1}
+	root.Right.Right = &Node{Value: 30}
 
-	target := 5
-	path := []int{}
+	fmt.Println("Before change:")
+	preorder(root)
+	fmt.Println()
 
-	if findPath(root, target, &path) {
-		fmt.Println("Path from root to node:", path)
-	} else {
-		fmt.Println("Target not found")
-	}
+	changeTree(root)
+
+	fmt.Println("After change:")
+	preorder(root)
+	fmt.Println()
+
 }

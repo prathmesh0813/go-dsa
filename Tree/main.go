@@ -226,22 +226,38 @@ func main() {
 	//     / \   / \
 	//    3  5  1  30
 
-	root := &Node{Value: 50}
-	root.Left = &Node{Value: 7}
-	root.Right = &Node{Value: 2}
-	root.Left.Left = &Node{Value: 3}
-	root.Left.Right = &Node{Value: 5}
-	root.Right.Left = &Node{Value: 1}
-	root.Right.Right = &Node{Value: 30}
+	// root := &Node{Value: 50}
+	// root.Left = &Node{Value: 7}
+	// root.Right = &Node{Value: 2}
+	// root.Left.Left = &Node{Value: 3}
+	// root.Left.Right = &Node{Value: 5}
+	// root.Right.Left = &Node{Value: 1}
+	// root.Right.Right = &Node{Value: 30}
 
-	fmt.Println("Before change:")
-	preorder(root)
-	fmt.Println()
+	// fmt.Println("Before change:")
+	// preorder(root)
+	// fmt.Println()
 
-	changeTree(root)
+	// changeTree(root)
 
-	fmt.Println("After change:")
-	preorder(root)
-	fmt.Println()
+	// fmt.Println("After change:")
+	// preorder(root)
+	// fmt.Println()
+
+	//Problem14 Minimum time taken to burn binary tree
+	// Example:
+	//          1
+	//         / \
+	//        2   3
+	//       / \
+	//      4   5
+	root := &Node{1, nil, nil}
+	root.Left = &Node{2, nil, nil}
+	root.Right = &Node{3, nil, nil}
+	root.Left.Left = &Node{4, nil, nil}
+	root.Left.Right = &Node{5, nil, nil}
+
+	target := 2
+	fmt.Println("Minimum time to burn tree:", minTimeToBurnTree(root, target))
 
 }
